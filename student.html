@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    table{
+        margin:0 auto;
+         margin-top: 50px;
+    width: 80%;
+    }
+    td{
+        padding: 5px;
+        text-align: center;
+
+    }
+</style>
+<body>
+    <input id="input" type="text" placeholder="nhap ten students">
+    <br>
+    <input id="input" type="text" placeholder="nhap tuoi">
+    <br>
+    <input id="input" type="text" placeholder="nhap address">
+    <br>
+    <button onclick="createStudent()"> Create </button>
+    <br>
+    <input id="search" type="text" placeholder="nhap ten students"
+
+    <button onclick="searchStudents()"> Search </button>
+  <table border="1px">
+    <thead>
+        <th> Id</th>
+        <th> Name</th>
+        <th> Age</th>
+        <th> Address</th>
+    </thead>
+    <tbody>
+        
+    </tbody>
+  </table>
+</body>
+<script>
+    let listStudents=[];
+    function creatStudents(){
+        let Id= document.getElementById("input").value;
+        listId.push(Id);
+    
+     }
+     function renderId(){
+       let data="";
+        for (let i=0;i<listId.length;i++) {
+            let Id=listId[i]
+         data+=
+         `
+            <tr>
+                <td> ${i+1} </td>
+                <td> ${Id} </td>
+                <td> <button> Edit </button> </td>
+                <td> <button> Delete </button> </td>
+            <tr>
+        `
+        }
+        document.getElementById("body").innerHTML=data;
+     }
+     function deleteId(id){
+        listId.splice(id,1);
+        renderlistId(id);
+     }
+     function editId
+</script>
+</html>
